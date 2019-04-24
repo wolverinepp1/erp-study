@@ -1,0 +1,43 @@
+<form [formGroup]="form">
+  <md-card>
+    <md-card-header>
+      <md-card-title>Login：</md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <md-input-container hintLabel="Must fill" class="full-width">
+        <input mdInput type="text" placeholder="Your email" formControlName="email">
+      </md-input-container>
+      <md-input-container hintLabel="Must fill" class="full-width">
+        <input mdInput type="text" placeholder="password" formControlName="password">
+      </md-input-container>
+      <hr>
+      <button md-raised-button type="button" color="primary" [disabled]="!form.valid" (click)="login()">Login</button>
+    </md-card-content>
+    <md-card-actions class="text-right">
+      <p>Not registered yet?
+        <a href="javascript:;" (click)="toRegister('regist')">Register</a>
+      </p>
+      <p>Forgot password?
+        <a href="javascript:;" (click)="toRegister('find')">Find Back</a>
+      </p>
+      <p style="color:red;text-align: left;font-size:20px;margin:0;" *ngIf="wrong">
+        Your login name or your password is not correct!!
+      </p>
+    </md-card-actions>
+  </md-card>
+
+  <md-card>
+    <md-card-header>
+      <md-card-title>Good Life</md-card-title>
+      <md-card-subtitle>{{(quote$ |async).cn}}</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image [src]="(quote$ |async).pic">
+    <md-card-content>
+      <span>
+        {{(quote$ |async).en}}
+      </span>
+    </md-card-content>
+  </md-card>
+</form>
+
+

@@ -1,0 +1,16 @@
+<md-sidenav-container>
+  <md-sidenav #sidenav mode="over">
+    <app-sidebar (toggle)="sidenav.toggle()"></app-sidebar>
+  </md-sidenav>
+  <div class="site">
+    <header>
+      <app-header (toggle)="sidenav.toggle()" (change)="deepColor=$event"></app-header>
+    </header>
+    <main [ngStyle]="{background:deepColor==true?'#4CAF50':'#FFFFFF'}">
+      <router-outlet></router-outlet>
+    </main>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+  </div>
+</md-sidenav-container>

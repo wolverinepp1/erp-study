@@ -1,0 +1,32 @@
+<md-nav-list>
+  <h3 md-subheader>Project</h3>
+  <md-list-item (click)="toTask('project')">
+    <md-icon svgIcon="projects" md-list-icon></md-icon>
+    <span md-line>Main Page</span>
+    <span md-line md-subheader>View all your projects</span>
+  </md-list-item>
+
+  <h3 md-subheader>Calender</h3>
+  <md-list-item (click)="toTask('month')">
+    <md-icon svgIcon="month" md-list-icon></md-icon>
+    <span md-line>Month View</span>
+    <span md-line md-subheader>View all your calendars by month</span>
+  </md-list-item>
+  <md-list-item (click)="toTask('week')">
+    <md-icon svgIcon="week" md-list-icon></md-icon>
+    <span md-line>Week View</span>
+    <span md-line md-subheader>View all your calendars by week</span>
+  </md-list-item>
+  <md-list-item (click)="toTask('day')">
+    <md-icon svgIcon="day" md-list-icon></md-icon>
+    <span md-line>Day View</span>
+    <span md-line md-subheader>View all your calendars by day</span>
+  </md-list-item>
+
+  <h3 md-subheader>User</h3>
+  <md-list-item (click)="toTask('login')">
+    <md-icon svgIcon="unassigned" md-list-icon></md-icon>
+    <span md-line>log out</span>
+    <span md-line md-subheader>Log out current user</span>
+  </md-list-item>
+</md-nav-list>
