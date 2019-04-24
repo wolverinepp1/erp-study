@@ -27,20 +27,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Take a peak in this application
 
 #### Welcome Log in page
-![alt text](http://src/assets/intro/1.JPG)
+![Auto-import projects](src/assets/intro/1.JPG)
+
 
 
 #### Side Bar Page
-![alt text](http://src/assets/intro/2.JPG)
+![Auto-import projects](src/assets/intro/2.JPG)
 
 
 #### Task list Page
-![alt text](http://src/assets/intro/3.JPG)
+![Auto-import projects](src/assets/intro/3.JPG)
 
 
 #### Main Project Page
-![alt text](http://src/assets/intro/4.JPG)
+![Auto-import projects](src/assets/intro/4.JPG)
 
 
 #### Add Prject Page
-![alt text](http://src/assets/intro/5.JPG)
+![Auto-import projects](src/assets/intro/5.JPG)
